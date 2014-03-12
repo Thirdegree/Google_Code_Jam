@@ -13,8 +13,6 @@ sums = {}
 
 def find_matches(total, list1):
 	for i in xrange(len(list1)):
-		if list1[i] > total:
-			continue
 		for j in xrange(i+1, len(list1)):
 			if list1[i] + list1[j] == total:
 				return i+1, j+1
